@@ -28,6 +28,12 @@ img {
 
 img:hover {
     scale: 101%;
-    animation-duration: 250ms;
+    animation-duration: 25s;
   
+}
+
+button{
+    height: 50px;
+    width: 200px;
+    background-color: blueviolet;
 }
