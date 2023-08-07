@@ -1,9 +1,13 @@
 body{
+    width:vw;
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     background-color: rgb(237, 239, 242);
 
+}
+header{
+    margin: 30px;
 }
 
 .layout{
@@ -14,7 +18,20 @@ body{
 h1{
     font-size: 10rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(85, 86, 87)
+    color: rgb(67, 68, 69);
+    margin-bottom: 10px
+}
+h4{
+    font-size:2rem;
+    color: rgb(85,86,87);
+    margin: 10px;
+}
+
+p{
+    font-size:20px;
+    color: rgb(85,86,87);
+    margin: 10px;
+    width: 100%
 }
 
 img {
@@ -27,9 +44,15 @@ img {
 }
 
 img:hover {
-    scale: 101%;
-    animation-duration: 25s;
+    /* scale: 101%;
+    animation-duration: 25s; */
+    transition: all .2s ease-in-out;
+    transform: scale(1.02);
   
+}
+
+#gallery{
+margin: 30px
 }
 
 button{

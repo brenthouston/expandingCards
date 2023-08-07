@@ -40,6 +40,9 @@ const title =`
 <div>
 <h1>Painting Portfolio</h1>
 </div>
+<h4>Original art by Brent Houston</h4>
+<p>Raised by back-to-landers in rural Arkansas. Brent Houston is a painter and printmaker working on Vashon Island in the Pacific Northwest of America.</p>
+</div>
 `
 header.innerHTML= title;
 
@@ -67,7 +70,7 @@ const eastPassage = new IMG("350px", "350px", "../images/EastPassage.jpg");
 const main = document.querySelector("main");
 
 const content = `
-    <div>
+    <div id="gallery">
     <img alt="bananna"src="${banImg.image}" style="height: ${banImg.height}; width: ${banImg.width};"></img>
     <img alt="trees"src="${treesImg.image}" style="height: ${treesImg.height}; width: ${treesImg.width};"></img>
     <img alt="trailer"src="${trailer.image}" style="height: ${trailer.height}; width: ${trailer.width};"></img>
