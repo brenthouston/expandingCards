@@ -31,13 +31,33 @@ import IMG from "./IMG.js";
 
 // }
 
-const banImg = new IMG("400px", "400px", "../images/bananna.jpg");
+
+// Header HTML
+
+const header = document.querySelector('header')
+
+const title =`
+<div>
+<h1>Painting Portfolio</h1>
+</div>
+`
+header.innerHTML= title;
+
+
+
+// Main HTML
+
+const banImg = new IMG("350px", "350px", "../images/bananna.jpg");
+const treesImg = new IMG("350px", "350px", "../images/tress.jpg");
 
 const main = document.querySelector("main");
 
 const content = `
     <div>
-    <img src="${banImg.image}"></img>
+    <img src="${banImg.image}" style="height: ${banImg.height}; width: ${banImg.width};"></img>
+    <img src="${treesImg.image}" style="height: ${treesImg.height}; width: ${treesImg.width};"></img>
     </div>`;
 
 main.innerHTML = content;
+
+
